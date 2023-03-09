@@ -287,6 +287,7 @@ export const Navigation = () => {
                                 title={"Glossary"}
                                 link={"user-guides/page-builder/essentials/glossary"}
                             />
+                            <Page link={"user-guides/page-builder/essentials/create-page"} />
                         </Section>
                     </Collapsable>
                 </NavGroup>
