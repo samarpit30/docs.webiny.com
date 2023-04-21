@@ -295,6 +295,9 @@ export const Navigation = () => {
                             <Page
                                 link={"user-guides/page-builder/essentials/page-category"}
                             />
+                            <Page
+                                link={"user-guides/page-builder/essentials/navigation-menu"}
+                            />
                         </Section>
                     </Collapsable>
                 </NavGroup>
