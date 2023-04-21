@@ -290,13 +290,17 @@ export const Navigation = () => {
                             <Page
                                 link={"user-guides/page-builder/essentials/website-settings"}
                             />
-                            <Page link={"user-guides/page-builder/essentials/create-page"} />
-
+                            <Page 
+                                link={"user-guides/page-builder/essentials/create-page"} 
+                            />
                             <Page
                                 link={"user-guides/page-builder/essentials/page-category"}
                             />
                             <Page
                                 link={"user-guides/page-builder/essentials/navigation-menu"}
+                            />
+                            <Page
+                                link={"user-guides/page-builder/essentials/seo-and-social-sharing"}
                             />
                         </Section>
                     </Collapsable>
