@@ -302,6 +302,21 @@ export const Navigation = () => {
                             <Page
                                 link={"user-guides/page-builder/essentials/seo-and-social-sharing"}
                             />
+                            <Page
+                                link={"user-guides/page-builder/essentials/create-responsive-page"}
+                            />
+                            <Page
+                                link={"user-guides/page-builder/essentials/page-export-import"}
+                            />
+                            <Page
+                                link={"user-guides/page-builder/advanced/page-localization"}
+                            />
+                            <Page
+                                link={"user-guides/page-builder/essentials/page-revisions"}
+                            />
+                            <Page 
+                                link={"user-guides/page-builder/advanced/user-creation"} 
+                            />
                         </Section>
                     </Collapsable>
                 </NavGroup>
