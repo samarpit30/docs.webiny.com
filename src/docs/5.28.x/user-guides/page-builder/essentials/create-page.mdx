@@ -7,13 +7,13 @@ import { Alert } from "@/components/Alert";
 
 <Alert type="success" title="WHAT YOU'LL LEARN">
 
-- how to create a page
+- how to create a page using page builder
 
 </Alert>
 
 Webiny's page builder incorporates a drag-and-drop visual editor that allows you to easily create and edit web pages without requiring any coding skills.
 
-In this tutorial, we will learn how to create a page in the page builder. As an example, we will create a page with the section shown in the images below:
+In this tutorial, we will learn how to create a page using the page builder. As an example, we will create a page with the section shown in the image below:
 
 *Image of Section that we will create in this tutorial*
 
@@ -31,15 +31,17 @@ We will do this in 7 steps:
 
 1. From the **Side Menu**, click **Page Builder** > **PAGES** > **Pages**.
 
+    ✔️ The **Pages** screen opens.
+
 2. Click **+ NEW PAGE**.
 
     ✔️ The **Select a category** screen opens.
 
-3. In the **category** list, click **Static**.
+3. In the category list, click **Static**.
 
     ✔️ Page editor screen opens.
 
-4. Click the page's title **Untitled**.
+4. To rename the page, click the page's title **Untitled**.
 
     ✔️ A textbox appears.
 
@@ -48,6 +50,8 @@ We will do this in 7 steps:
 6. Click anywhere outside the textbox.
 
     ✔️ The message "Page title updated successfully!" displays.
+
+    **Note**: This page title does not need to be same as the title that you want to be listed in search engine rankings. The use of this title is for internal content organization.
 
 
 ## Step 2: Add and Edit a New Block
@@ -62,27 +66,27 @@ We will do this in 7 steps:
 
     ✔️ The page editor screen opens with the newly added block.
 
-    **Note**: A block contains a grid, and a grid contains one or more cells.
+    **Note**: Blocks are the building blocks of a page. A page may be built with multiple blocks. A block can contain elements like heading, paragraph, grid, etc. A grid is made of one or more cells. And, the elements like heading and paragraph can also be placed inside cells.
 
 4. Hover on and click the **grid** inside the empty block.
 
-    ✔️ Several properties of the **grid** display in **STYLE** tab.
+    ✔️ Properties of the **grid** display in **STYLE** tab.
 
-5. In the **STYLE** tab, click **Width**.
+5. In the **STYLE** tab of the grid element, click **Width**.
 
     ✔️ The **Width** accordion opens.
 
-    a. In the **Width** value textbox, update the text from **1100** to **100**.
+    a. In the **Width value** textbox, update the text from **1100** to **100**.
 
-    b. In the **Width** unit dropdown, click **%**.
+    b. In the **Width unit** dropdown, click **%**.
 
     **Note**: This will make the grid occupy 100% width of its parent element - the block.
 
-6. In the **STYLE** tab, click **Grid Size**.
+6. In the **STYLE** tab of the grid element, click **Grid Size**.
 
     ✔️ The **Grid Size** accordion opens.
 
-    a. In the layout options, click the two column layout.
+    a. In the layout options, click the **two-column-layout**.
 
     b. Update the value of **Cell 1** from **6** to **5**.
 
@@ -101,11 +105,11 @@ We will do this in 7 steps:
 
     ✔️ The **Basic** elements accordion opens.
 
-3. Hover on **HEADING**.
+3. Hover on the **HEADING** element.
 
 4. Drag and drop the **HEADING** element inside **Cell 1**.
 
-5. Double click the **Heading** to edit it.
+5. Double click the **Heading** element to edit it.
 
 6. Update the text from **Heading** to **The benefits of a Serverless CMS**.
 
@@ -113,25 +117,25 @@ We will do this in 7 steps:
 
 8. In the text formatting menu that appears above the selected text, click the **bold** icon ( **B** ).
 
-9. In the **STYLE** tab, click **Text**.
+9. In the **STYLE** tab of the heading element, click **Text**.
 
     ✔️ The **Text** accordion opens.
 
-    a. In the **Color** menu, click the **Orange** color.
+    a. In the **Color** picker menu, click the **Orange** color.
 
     b. In the **Heading Type** dropdown, click **H1**.
 
     c. In the **Typography** dropdown, click **Heading 3**.
 
-10. In the **STYLE** tab, click **Margin**.
+10. In the **STYLE** tab of the heading element, click **Margin**.
 
     ✔️ The **Margin** accordion opens.
 
-    a. Click the **LINK ALL SIDES** icon ( 🔗 ).
+    a. Click the **LINK ALL SIDES** icon ( 🔗 ) to make it inactive.
 
-    b. Update the margin-bottom value from **0px** to **60px**.
+    b. Update the **margin-bottom** value from **0px** to **60px**.
 
-11. Now, following the Steps 1 to 10, add the following two texts with the mentioned properties below the current heading inside **Cell 1**:
+11. Now, following the Steps 1 to 10, add the following two texts in order with the mentioned properties below the **The benefits of a Serverless CMS** text inside **Cell 1**:
 
     | Text                                                                                      | Formatting            | Color  | Heading Type | Typography | Margin |
     | :---------------------------------------------------------------------------------------- | :-------------------- | :----- | :----------- | :--------- | :------------ |
@@ -141,7 +145,7 @@ We will do this in 7 steps:
 
 ## Step 4: Add an Image
 
-1. From the **Basic** elements, drag and drop the **IMAGE** element inside **Cell 2**.
+1. From the **Basic** elements menu, drag and drop the **IMAGE** element inside **Cell 2**.
 
     ✔️ The media manager screen opens.
 
@@ -149,21 +153,23 @@ We will do this in 7 steps:
 
     ✔️ Your operating system's file explorer screen opens.
 
-3. From the file explorer, upload this(*Add link to the image stored on a public directory*) image.
+3. From the file explorer, upload the following image:
+
+    *(Add Image)*
 
 4. Click the uploaded image in the media manager.
 
-    ✔️ The page editor screen opens.
+    ✔️ The page editor screen opens with the image added to the page.
 
-5. In the **STYLE** tab of the image, click **Image**.
+5. In the **STYLE** tab of the image element, click **Image**.
 
     ✔️ The **Image** accordion opens.
 
-    a. In the **Width** value textbox, type **80**
+    a. In the **Width value** textbox, type **80**
     
-    b. In the **Width** unit dropdown, click **%**.
+    b. In the **Width unit** dropdown, click **%**.
 
-6. In the **STYLE** tab of the image, click **Horizontal align**.
+6. In the **STYLE** tab of the image element, click **Horizontal align**.
 
     ✔️ The **Horizontal align** accordion opens.
 
@@ -182,16 +188,16 @@ We will do this in 7 steps:
 
 4. In **Alignment**, click the **CENTER** icon ( *Center Alignment icon required* ).
 
-5. Similarly, align the **Increase your business ...** and **By switching to ...** text in center.
+5. Similarly, align the **Increase your business ...** and **By switching to ...** texts in the **center**.
 
-6. Following the Instruction 6 of Step 4, align the image in center.
+6. Following the instruction 6 of step 4, align the image in the **center**.
 
 
 ## Step 6: Review settings
 
 1. Click the **SETTINGS** icon ( ⚙️ ).
 
-    ✔️ The **Page Settings** screen opens.
+    ✔️ The **General settings** tab inside the **Page Settings** screen opens. 
 
 2. In the **Path** textbox, type **/the-benefits-of-a-serverless-cms**.
 
@@ -204,9 +210,9 @@ We will do this in 7 steps:
 
 ## Step 7: Preview and publish
 
-1. Click the kebab menu icon ( ⁝ ) on the top right of the page.
+1. Click the **kebab menu** icon ( ⁝ ) on the top right of the page.
 
-    ✔️ Menu opens.
+    ✔️ Menu opens with the options **Preview** and **Set as homepage**.
 
 2. Click **Preview**.
 
@@ -216,7 +222,7 @@ We will do this in 7 steps:
 
     ✔️ The **Pages** screen opens with the message "Your page was published successfully!".
 
-4. In the **PAGE PREVIEW** tab of the **The benefits of a Serverless CMS** page, click the kebab menu icon ( ⁝ ).
+4. In the **PAGE PREVIEW** tab of the **The benefits of a Serverless CMS** page, click the **kebab menu** icon ( ⁝ ).
 
     ✔️ Menu opens with the options **View** and **Set as homepage**.
 
