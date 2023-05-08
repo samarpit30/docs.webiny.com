@@ -11,11 +11,11 @@ import { Alert } from "@/components/Alert";
 
 </Alert>
 
-Webiny allows you to create forms and collect data throuugh them. In this tutorial, we will learn how to create and publish a form in Form Builder. We will do this in __ steps:
+Webiny allows you to create forms and collect data through them. In this tutorial, we will learn how to create and publish a form in the form builder. We will do this in 4 steps:
 
 - Step 1: Create a form
-- Step 2: Publish the form
-- Step 3: Preview the form
+- Step 2: Integrate the form
+- Step 3: Test the form
 - Step 4: View collected data
 
 
@@ -62,14 +62,93 @@ Webiny allows you to create forms and collect data throuugh them. In this tutori
     ✔️ The **Forms** screen opens with the message "Your form was published successfully!".
 
 
-## Step 2: Publish the Form
+## Step 2: Integrate the Form
 
-In this step, we will integrate the form into a page. We will use the Page Builder to do this. If you are not familiar with how to create a page, please follow the [Create Page](../link) tutorial to create it.
+In this step, we will integrate the form into a page. We will use the Page Builder to do this. If you are not familiar with how to create a page, please follow the [Create Page](../link) tutorial.
 
 1. From the **Side Menu**, click **Page Builder** > **PAGES** > **Pages**.
 
     ✔️ The **Pages** screen opens.
 
-2. Create a new page with the title **Contact Us**.
+2. Add a new page in the **Static** category.
 
-3. 
+3. Update the title of the page to **Contact Us**.
+
+4. Add an empty block to the page.
+
+5. Click the **ADD ELEMENT** icon.
+
+    ✔️ The elements menu opens.
+
+6. Click **Form**.
+
+    ✔️ The **Form** elements accordion opens.
+
+7. Drag and drop the **FORM** element inside the block.
+
+    ✔️ The **ELEMENT** tab of the **FORM** element opens.
+
+8. In the **Form** dropdown, select **Contact Form**.
+
+    ✔️ The **Revision** dropdown appears.
+
+9. In the **Revision** tab, click **Latest published revision**.
+
+10. Click **Save**.
+
+    ✔️ The **Contact Form** appears in the page editor.
+
+11. Click **PUBLISH**.
+
+    ✔️ The **Pages** screen opens with the message "Your page was published successfully!".
+
+
+## Step 3: Test the Form
+
+1. On the **Pages** screen, click the **Contact Us** list item in the list of pages.
+
+    ✔️ The **PAGE PREVIEW** tab opens.
+
+2. Click the **kebab menu** icon ( ⁝ ) on the top right of the page.
+
+    ✔️ Menu opens with the options **View** and **Set as homepage**.
+
+3. Click **View**.
+
+    ✔️ The **Contact Us** page opens.
+
+4. In the **First name** textbox, type *your name* (e.g. **John**). 
+
+5. In the **Last name** textbox, type *your name* (e.g. **Doe**).
+
+6. In the **Email** textbox, type *your email* (e.g. **johndoe@example.com**).
+
+7. In the **Message** textbox, type *your message* (e.g. **Testing the form.**).
+
+8. Click **SUBMIT**.
+
+    ✔️ The success message appears.
+    *(Error; ask Swapnil Sir. After clicking the button, the data doesn't get submitted and success message does not appear.)*
+
+
+## Step 4: View Collected data
+
+1. From the **Side Menu**, click **Form Builder** > **FORMS** > **Forms**.
+
+    ✔️ The **Forms** screen opens.
+
+2. Click **Contact Form** list item in the list of forms.
+
+    ✔️ The **FORM PREVIEW** tab opens.
+
+3. Click the **SUBMISSIONS* tab.
+
+    ✔️ The **SUBMISSIONS** tab opens.
+
+You can view the collected data in the **SUBMISSIONS** tab of the form.
+
+**Note**: In the **TRIGGERS** tab inside the form editor, you can set the action that should be taken after the submission of a form. Two actions are available:
+
+- **Redirect**: Sends the user to a specific URL after the successful submission of a form.
+
+- **Webhook**: Makes a POST HTTP request to a specific URL after the successful submission of a form.
