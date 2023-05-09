@@ -319,6 +319,7 @@ export const Navigation = () => {
                             />
                         </Section>
                     </Collapsable>
+                    <Separator />
                     <Collapsable title={"Form Builder"}>
                         <Section title={"Essentials"}>
                             <Page
