@@ -13,13 +13,14 @@ import { Alert } from "@/components/Alert";
 
 </Alert>
 
-Similar to [User Creation](../link) in Headless CMS, Webiny allows you to add multiple users to the application with different access permissions to the page puilder. In this tutorial, we will learn how to create a user group with custom access permissions to the Page Builder. Then we will create a user within that user group.
+Webiny allows you to add multiple users to the application with different access permissions to the Page Builder. In this tutorial, we will learn how to create a user group with custom access permissions to the Page Builder. Then we will create a user within that user group.
 
 As an example, we will create a user group with the following access permissions:
 
 - Permission to view, create, and update all the page categories in the Page Builder.
 - Permission to view, create, and update all the menus in the Page Builder.
 - Permission to view, create, update, publish, and unpublish all the pages in the Page Builder.
+- Permission to view, create, update, and unlink all the templates in the Page Builder.
 - Permission to view, create, and update all the block categories in the Page Builder.
 - Permission to view, create, update, and unlink all the blocks in the Page Builder.
 
@@ -74,13 +75,21 @@ We will do this in 3 steps:
 
     c. Under **PUBLISHING ACTIONS**, check both - **Publish** and **Unpublish** checkboxes.
 
-6. Under the **BLOCK CATEGORIES** section:
+6. Under the **TEMPLATES** section:
 
     a. In the **Access Scope** dropdown, click **All content**.
 
     b. In the **Primary Actions** dropdown, click **Read, write**.
 
-7. Under the **BLOCK CONTENT** section:
+    c. Select the **User is allowed to unlink a template** checkbox.
+
+7. Under the **BLOCK CATEGORIES** section:
+
+    a. In the **Access Scope** dropdown, click **All content**.
+
+    b. In the **Primary Actions** dropdown, click **Read, write**.
+
+8. Under the **BLOCK CONTENT** section:
 
     a. In the **Access Scope** dropdown, click **All content**.
 
@@ -88,16 +97,16 @@ We will do this in 3 steps:
 
     c. Select the **User is allowed to unlink a block** checkbox.
 
-8. Under the **SETTINGS** section, in the **Access Level** dropdown in front of **Manage settings**, select **No access**.
+9. Under the **SETTINGS** section, in the **Access Level** dropdown in front of **Manage settings**, select **No access**.
 
-9. Click **SAVE GROUP**.
+10. Click **SAVE GROUP**.
 
     ✔️ The message “Group saved successfully!” displays.
 
 
 ## Step 3: Create User
 
-1. From the **Side Menu**, Click **Settings** > **ADMIN USERS** > **Users**
+1. From the **Side Menu**, click **Settings** > **ADMIN USERS** > **Users**
 
 2. Click **+ NEW USER**.
 

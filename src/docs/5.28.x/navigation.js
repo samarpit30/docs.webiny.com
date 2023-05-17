@@ -309,10 +309,12 @@ export const Navigation = () => {
                                 link={"user-guides/page-builder/essentials/page-export-import"}
                             />
                             <Page
-                                link={"user-guides/page-builder/advanced/page-localization"}
-                            />
-                            <Page
                                 link={"user-guides/page-builder/essentials/page-revisions"}
+                            /> 
+                        </Section>
+                        <Section title={"Advanced"}>
+                            <Page
+                                link={"user-guides/page-builder/advanced/page-localization"}
                             />
                             <Page 
                                 link={"user-guides/page-builder/advanced/user-creation"} 
