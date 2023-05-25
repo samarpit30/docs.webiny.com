@@ -11,29 +11,66 @@ import { Alert } from "@/components/Alert";
 
 </Alert>
 
-Similar to [Content Localization](../link) in Headless CMS, Webiny allows creating different versions of the same page for different locales. In this tutorial, we will learn how to create a page for multiple locales. We will do this in 2 steps:
+Webiny allows creating different versions of the same page for different locales. In this tutorial, we will learn how to create a page for multiple locales. We will do this in 4 steps:
 
-- Step 1: Create a new category in a new locale
-- Step 2: Create a new page in the new locale
+- Step 1: Create a new locale 
+- Step 2: Export a page
+- Step 3: Create a new category in the new locale
+- Step 4: Import the page in the new locale
 
 
 ## Prerequisites
 
-To follow this tutorial, you need the following:
-
-1. The **it-IT** locale in which we will create the page. If you don't have the **it-IT** locale, please follow the [Content Localization](../link) tutorial to create it.
-2. The **The benefits of a Serverless CMS** page. If you don’t have the **The benefits of a Serverless CMS** page, please follow the [Create Page](../essentials/create-page) tutorial to create it.
+To follow this tutorial, you need the **The benefits of a Serverless CMS** page. If you don’t have the **The benefits of a Serverless CMS** page, please follow the [Create Page](../essentials/create-page) tutorial to create it.
 
 
-## Step 1: Create a New Category in a New Locale
+## Step 1: Create a New Locale
 
-1. From the **Side Menu**, click **Page Builder** > **PAGES** > **Categories**.
+We will create a new locale for the **Italic** language.
+
+1. From the **Side Menu**, click **Settings** > **LANGUAGES** > **Locales**.
+
+2. Click **+ NEW LOCALE**.
+
+   ✔️ The **New locale** section opens.
+
+3. In the **Code** dropdown, type **it-IT**.
+
+4. In the available options in the dropdown, click **it-IT**.
+
+5. Click **SAVE LOCALE**.
+
+
+## Step 2: Export a Page
+
+1. From the **Side Menu**, click **Page Builder** > **PAGES** > **Pages**.
+
+    ✔️ The **Pages** screen opens.
+
+2. Select the checkbox on the **The benefits of a Serverless CMS** list item in the list of pages.
+
+3. Click the **EXPORT** icon.
+
+    ✔️ The **Select Page Revision** screen opens.
+
+4. Click **Published**.
+
+5. Click **CONTINUE**.
+
+    ✔️ A screen appears with the prompt **Your export is now ready!**
+
+6. Click the **COPY** icon to copy the export URL.
+
+7. Click **CLOSE**.
+
+
+## Step 2: Create a New Category in the New Locale
+
+1. Click on the **LOCALE** dropdown in the header section and select **it-IT** to switch to the Italian locale.
+
+2. From the **Side Menu**, click **Page Builder** > **PAGES** > **Categories**.
 
     ✔️ The **Categories** screen opens.
-
-2. Click on the **LOCALE** dropdown in the header section and select **it-IT** to switch to the Italian locale.
-
-    ✔️ The **Categories** screen in the **it-IT** locale opens.
 
 3. Click **+ NEW CATEGORY**.
 
@@ -52,31 +89,27 @@ To follow this tutorial, you need the following:
     ✔️ The message "Category saved successfully." displays.
 
 
-## Step 2: Create a New Page in the New Locale
-
-In this step, we will export the **The benefits of a Serverless CMS** page from the US locale and import it into the Italian locale.
-
-If you are not familiar with how to import and export a page, please follow the [Page Export Import](../essentials/page-export-import) tutorial.
+## Step 4: Import the Page in the New Locale
 
 1. From the **Side Menu**, click **Page Builder** > **PAGES** > **Pages**.
 
     ✔️ The **Pages** screen opens.
 
-2. Click on the **LOCALE** dropdown in the header section and select **en-US** to switch to the US locale.
+2. Click the **IMPORT** icon.
 
-    ✔️ The **Pages** screen in the **en-US** locale opens.
+    ✔️ The **Select a category** screen opens.
 
-3. Export the **The benefits of a Serverless CMS** page.
+2. Click **Static**.
 
-4. Copy the export URL.
-    
-    (Or download the ZIP archive.)
+4. Click **PASTE FILE URL** to import the page with the copied URL.
 
-5. Click on the **LOCALE** dropdown in the header section and select **it-IT** to switch to the Italian locale.
+6. Paste the copied URL in the **File URL** textbox and click **CONTINUE**.
 
-    ✔️ The **Pages** screen in the **it-IT** locale opens.
+    ✔️ The **Import Pages** screen appears with the message "All pages have been imported".
 
-6. Import the **The benefits of a Serverless CMS** page under the **Static** category with the copied export URL (or the downloaded ZIP archive).
+7. Click **CONTINUE**.
+
+    ✔️The **Pages** screen opens with the imported page available in the list of pages.
 
 7. Edit the imported page and update the following values:
 
