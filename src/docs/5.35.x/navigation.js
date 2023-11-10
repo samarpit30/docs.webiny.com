@@ -48,6 +48,9 @@ export const Navigation = () => {
                         <Page link={"user-guides/page-builder/advanced/page-export-import"} />
                         <Page link={"user-guides/page-builder/advanced/page-localization"} />
                     </Section>
+                    <Section title={"File Manager"}>
+                        <Page link={"user-guides/page-builder/file-manager/upload-file"} />
+                    </Section>
                 </Collapsable>
             </NavGroup>
         </>
