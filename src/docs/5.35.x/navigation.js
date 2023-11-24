@@ -51,6 +51,7 @@ export const Navigation = () => {
                     <Section title={"File Manager"}>
                         <Page link={"user-guides/page-builder/file-manager/upload-file"} />
                         <Page link={"user-guides/page-builder/file-manager/organizing-files"} />
+                        <Page link={"user-guides/page-builder/file-manager/tagging-files"} />
                     </Section>
                 </Collapsable>
             </NavGroup>
