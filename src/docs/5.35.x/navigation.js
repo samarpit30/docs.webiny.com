@@ -29,6 +29,12 @@ export const Navigation = () => {
                         <Page link={"user-guides/headless-cms/advanced/content-localization"} />
                         <Page link={"user-guides/headless-cms/advanced/user-creation"} />
                     </Section>
+                    <Section title={"APW"}>
+                        <Page link={"user-guides/headless-cms/apw/introduction-to-apw"} />
+                        <Page link={"user-guides/headless-cms/apw/define-workflow"} />
+                        <Page link={"user-guides/headless-cms/apw/submit-record-for-review"} />
+                        <Page link={"user-guides/headless-cms/apw/review-record"} />
+                    </Section>
                 </Collapsable>
                 <Separator />
                 <Collapsable title={"Page Builder"}>
