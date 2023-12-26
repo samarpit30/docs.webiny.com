@@ -35,6 +35,7 @@ export const Navigation = () => {
                         <Page link={"user-guides/headless-cms/apw/submit-record-for-review"} />
                         <Page link={"user-guides/headless-cms/apw/review-record"} />
                         <Page link={"user-guides/headless-cms/apw/submit-change"} />
+                        <Page link={"user-guides/headless-cms/apw/provide-sign-off"} />
                     </Section>
                 </Collapsable>
                 <Separator />
