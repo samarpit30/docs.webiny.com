@@ -1,0 +1,52 @@
+---
+title: Create Users
+description: Create user accounts to follow through the following tutorials.
+---
+
+import { Alert } from "@/components/Alert";
+import createUsersVideo from "./assets/create-users/apw-create-users.mp4";
+
+<Alert type="success" title="WHAT YOU'LL LEARN">
+
+- create user accounts to follow through the following tutorials
+
+</Alert>
+
+In this tutorial, we will create two user accounts that we will need in the following tutorials. If you are not familiar with how to create a user role (previously called "group") and a user account, please follow the [User Creation](../link) tutorial.
+
+<Video src={createUsersVideo} controls={true}/>
+
+1. Create a user role with the following attributes:
+
+    | Attribute    | Value                                                          |
+    | :-------     | :----------------------                                        |
+    | Name         | **Headless CMS Access US**                                     |
+    | Slug         | **headless-cms-access-us**                                     |
+    | Description  | **Grants full access to Headless CMS in en-US locale**         |
+    | *Permissions*|                                                                |
+    | Content      | Content can be accessed on > **Specific locales** > **en-US**  |
+    | Headless CMS | Access Level > **Full access**                                 |
+
+2. Create a user account with the following attributes:
+
+    | Attribute  | Value                     |
+    | :-------   | :----------------------   |
+    | First Name | **Adam**                  |
+    | Last Name  | **Reviewer**              |
+    | Email      | *User's email*            |
+    | Password   | *User's password*         |
+    | Role       | **Headless CMS Access US**|
+
+    **Note**: This user account will act as the reviewer of the blogs in the publishing workflow that we will create in the following tutorials.
+
+3. Create another user account with the following attributes:
+    
+    | Attribute  | Value                     |
+    | :-------   | :----------------------   |
+    | First Name | **John**                  |
+    | Last Name  | **Author**                |
+    | Email      | *User's email*            |
+    | Password   | *User's password*         |
+    | Role       | **Headless CMS Access US**|
+
+    **Note**: This user account will act as the author of the blogs in the publishing workflow that we will create in the following tutorials.

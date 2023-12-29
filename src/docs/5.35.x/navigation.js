@@ -31,11 +31,13 @@ export const Navigation = () => {
                     </Section>
                     <Section title={"APW"}>
                         <Page link={"user-guides/headless-cms/apw/introduction-to-apw"} />
+                        <Page link={"user-guides/headless-cms/apw/create-users"} />
                         <Page link={"user-guides/headless-cms/apw/define-workflow"} />
                         <Page link={"user-guides/headless-cms/apw/submit-record-for-review"} />
                         <Page link={"user-guides/headless-cms/apw/review-record"} />
                         <Page link={"user-guides/headless-cms/apw/submit-change"} />
                         <Page link={"user-guides/headless-cms/apw/provide-sign-off"} />
+                        <Page link={"user-guides/headless-cms/apw/schedule-publishing"} />
                     </Section>
                 </Collapsable>
                 <Separator />
