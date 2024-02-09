@@ -10,6 +10,14 @@ export const Navigation = () => {
           <Group title={"Advanced"}>
             <Page link={"headless-cms/advanced/import-export-content-models"} />
           </Group>
+          <Group title={"Users"}>
+            <Page link={"headless-cms/users/role-creation"} />
+            <Page link={"headless-cms/users/team-creation"} />
+            <Page link={"headless-cms/users/user-creation"} />
+            <Page link={"headless-cms/users/assign-role"} />
+            <Page link={"headless-cms/users/assign-team"} />
+            <Page link={"headless-cms/users/api-key-creation"} />
+        </Group>
         </Group>
 
         <Separator />
