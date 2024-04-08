@@ -1,0 +1,132 @@
+---
+id: 
+title: Customise Folder Access in Headless CMS
+description: Learn how to allow access to a folder to a specific user or team in Headless CMS.
+---
+
+import { Alert } from "@/components/Alert";
+import roleCreationVideo from "./assets/role-creation/create-user-role.mp4";
+
+<Alert type="success" title="WHAT YOU'LL LEARN">
+
+- how to allow access to a folder to a specific user or team in Headless CMS
+
+</Alert>
+
+Webiny's security feature called Folder Level Permissions enables you to allow access to a folder to a specific user(s) or team(s). In this tutorial, we will learn how to allow acces to a folder to a specific user or team in Headless CMS. We will do this in 4 steps:
+
+- Step 1: Create a Content Model
+- Step 2: Create Two Folders in the Content Model
+- Step 3: Give Access to a Folder to a User
+- Stwp 4: Give Access to a Folder to a Team
+
+## Prerequisites
+
+To follow this tutorial: 
+1. You need to have the user **John Doe** in your Webiny instance. If you don't have it, please follow the [Creation of User](/docs/{version}/user-guides/headless-cms/users/user-creation) tutorial to create it.
+2. You need to have the team **E-commerce L2 Managers** in your Webiny instance. If you don't have it, please follow the [Creation of Team](/docs/{version}/user-guides/headless-cms/users/team-creation) tutorial to create it.
+
+[Watch unedited video here](https://drive.google.com/file/d/1holFKZ52iAr17tx7PyvfJPbWCaJTk1-c/view?usp=sharing)
+
+
+<Video src={roleCreationVideo} controls={true}/>
+
+## Step 1: Create a Content Model
+
+1. Create a content model with the following attributes:
+
+    | Attribute            | Value                                       |
+    | :-------             | :----------------------                     |
+    | Name                 | **Product**                                    |
+    | Singular API Name    | **Product**                                    |
+    | Plural API Name      | **Products**                                   |
+    | Content model group  | **Ungrouped**                                 |
+    | Icon                 | **📦**                                      |
+    | Description          | **Products available in the online store**|
+
+    If you are not familiar with how to create a content model, please follow the [Create Content Model](/link) tutorial.
+
+
+2. Add the following fields with the given attributes to the **Product** content model:
+
+    | Field     | Label     | Field ID |
+    | :-------  | :---------| :------  |
+    | TEXT      | **Product Title** | title   |
+    | LONG TEXT | **Product Description**  | description     |
+    | Files | **Product Image**  | image     |
+
+
+## Step 2: Create Two Folders in the Content Model
+
+1. From the **Side Menu**, click **Headless CMS** > **UNGROUPED** > **Product**.
+
+    ✔️ The **Product** content entries' screen opens.
+
+2. In the navigation panel on the left, click **➕Create new folder**  
+    (Or, in the header section, click **➕NEW FOLDER**).
+
+    ✔️ The **Create a new folder** screen opens.
+
+3. In the **Title** textbox, type **Apparels**.
+
+4. In the **Slug** textbox, type **apparels**.
+
+5. In the **Parent folder** menu, click **Home**.
+
+6. Click **CREATE FOLDER**.
+
+    ✔️ The message "Folder created successfully!" displays.
+
+7. Now following Steps 2 to 6, create another folder with the following attributes:
+
+   | Attribute            | Value                                       |
+    | :-------             | :----------------------                     |
+    | Title                 | **Electronics**                                    |
+    | Slug    | **electronics**                                    |
+    | Parent folder      | **Home**                                   |
+
+
+## Step 3: Give Access to a Folder to a User
+
+1. Click the **kebab menu** icon ( ⁝ ) on the **Apparels** folder.
+
+   ✔️ A menu opens
+
+2. Click **Manage Permissions**.
+
+   ✔️ The **Manage permissions - _Folder Name_** screen opens.
+
+3. In the **Add user or a team** textbox, type **John Doe**.
+
+4. In the drop-down below, click **John Doe**.
+
+   ✔️ The user **John Doe** gets added to the **People and teams with access** list as an **Editor** by default.
+
+   **Note**: You can set the access permission to **Viewer**, **Editor**, or **Owner**.
+
+5. Click **SAVE**.
+
+   ✔️ The message "Folder permissions updated successfully!" displays.
+
+
+## Step 3: Give Access to a Folder to a Team
+
+1. Click the **kebab menu** icon ( ⁝ ) on the **Electronics** folder.
+
+   ✔️ A menu opens
+
+2. Click **Manage Permissions**.
+
+   ✔️ The **Manage permissions - _Folder Name_** screen opens.
+
+3. In the **Add user or a team** textbox, type **E-commerce L2 Managers**.
+
+4. In the drop-down below, click **E-commerce L2 Managers**.
+
+   ✔️ The team **E-commerce L2 Managers** gets added to the **People and teams with access** list as an **Editor** by default.
+
+   **Note**: You can set the access permission to **Viewer**, **Editor**, or **Owner**.
+
+5. Click **SAVE**.
+
+   ✔️ The message "Folder permissions updated successfully!" displays.
