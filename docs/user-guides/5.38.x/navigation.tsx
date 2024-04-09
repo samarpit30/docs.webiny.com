@@ -16,8 +16,10 @@ export const Navigation = () => {
             <Page link={"headless-cms/users/user-creation"} />
             <Page link={"headless-cms/users/assign-role"} />
             <Page link={"headless-cms/users/assign-team"} />
-            <Page link={"headless-cms/users/customise-folder-access-in-headless-cms"} />
             <Page link={"headless-cms/users/api-key-creation"} />
+            <Page link={"headless-cms/users/customise-folder-access-in-headless-cms"} />
+            <Page link={"headless-cms/users/multi-steps-form"} />
+            <Page link={"headless-cms/users/email-triggers-submission-thankyou"} />
         </Group>
         </Group>
 
