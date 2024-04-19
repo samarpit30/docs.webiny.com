@@ -20,6 +20,7 @@ export const Navigation = () => {
             <Page link={"headless-cms/users/customise-folder-access-in-headless-cms"} />
             <Page link={"headless-cms/users/multi-steps-form"} />
             <Page link={"headless-cms/users/email-triggers-submission-thankyou"} />
+            <Page link={"headless-cms/users/advanced-search-filter-builder"} />
         </Group>
         </Group>
 
